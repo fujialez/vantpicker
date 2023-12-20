@@ -1,0 +1,27 @@
+<!--components/wx-date-range/wx-date-range.wxml-->
+<view class="date-range">
+  <view class="dateChoose">
+    <van-icon name="clock-o" class="icon" />
+    <view class="time" >
+        <picker mode="date" value="{{startTime}}" start="{{minStartDate}}" end="{{maxStartDate}}" bindchange="startDateChange">
+          <view class="picker" wx:if="{{startTime}}" bind:tap="timeClick" data-type="start">
+            {{startTime}}
+          </view>
+          <view wx:else="{{!startTime}}">开始时间</view>
+        </picker>
+    </view>
+    <view class="timeCenter icon">
+      至
+    </view>
+    <view class="time">
+      <picker mode="date" value="{{endTime}}" start="{{minEndDate}}" end="{{maxEndDate}}" bindchange="endDateChange">
+          <view class="picker" wx:if="{{endTime}}" bind:tap="timeClick" data-type="end">
+            {{endTime}}
+          </view>
+          <view wx:if="{{!endTime}}">结束时间</view>
+        </picker>
+     
+    </view>
+    <!-- <van-icon name="cross" class="icon" /> -->
+  </view>
+</view>

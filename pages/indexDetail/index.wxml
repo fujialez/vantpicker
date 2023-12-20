@@ -1,0 +1,39 @@
+<!--pages/indexDetail.wxml-->
+
+<view class="page" style="padding-top:100px">
+ 
+<!--components/date-range/date-range.wxml-->
+<view class="date-range">
+  <view class="dateChoose">
+      <van-icon name="clock-o" class="icon" />
+      <view class="time" bind:tap="timeClick" data-params="start">
+        <view wx:if="{{startTime}}">
+          {{ startTime }}
+        </view>
+        <view wx:if="{{!startTime}}">开始时间</view>
+      </view>
+      <view class="timeCenter icon">
+        至
+      </view>
+      <view class="time" bind:tap="timeClick" data-params="end">
+        <view wx:if="{{endTime}}">
+          {{ endTime }}
+        </view>
+        <view wx:if="{{!endTime}}">结束时间</view>
+      </view>
+      <van-icon name="cross" class="icon" />
+    </view>
+    <van-popup show="{{show}}" position="bottom"  bind:click-overlay="cancel" bind:after-leave="afterLeave" >
+      <van-datetime-picker
+        value="{{currentDate}}"
+        type="date"
+        title="选择年月日"
+        min-date="{{minDate}}"
+        max-date="{{maxDate}}"
+        bind:confirm="confirm"
+        bind:cancel="cancel"
+      />
+    </van-popup>
+</view>
+ 
+</view>

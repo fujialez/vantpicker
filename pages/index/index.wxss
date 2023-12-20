@@ -1,0 +1,170 @@
+.contain_box {
+  height: 100%;
+  overflow: auto;
+}
+
+.van-cell {
+  display: flex;
+  align-items: center;
+}
+
+.custom-title {
+  display: flex;
+  align-items: center;
+}
+
+.custom-title .left_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+.custom-title .left_icon image {
+  max-width: 100%;
+}
+
+.custom-title .center_title {
+  flex: 1;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.custom-title .right_count {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  color: #fff;
+}
+
+.custom-title .right_count .green_line,
+.custom-title .right_count .gray_offline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.custom-title .right_count .green_line {
+  background-color: #a2ef4d;
+}
+
+.custom-title .right_count .gray_offline {
+  background-color: #bbbbbb;
+}
+
+.custom-title .right_count {
+  display: flex;
+  gap: 3px;
+  width: 90px;
+  color: #fff;
+}
+
+.custom-title .right_count .green_line,
+.custom-title .right_count .gray_offline {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+
+.custom-title .right_count .green_line {
+  background-color: #a2ef4d;
+}
+
+.custom-title .right_count .gray_offline {
+  background-color: #bbbbbb;
+}
+
+.ms_list {
+  padding: 10rpx;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 1%;
+  border: 1px solid #81b337;
+}
+
+.ms_list:first-child {
+  margin-top: 0;
+}
+
+.ms_list .ignore-ms-title {
+  height: 20px;
+  line-height: 20px;
+  font-size: 28rpx;
+}
+
+.ms_list .ms_title {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: #81b337;
+}
+
+.ms_list .ms_warehouse {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.ms_list .van-col {
+  padding: 10px;
+}
+
+.ms_list .imgBox {
+  position: relative;
+}
+
+.ms_list .imgBox image {
+  max-width: 100%;
+  height: 120px;
+}
+
+.ms_list .imgBox .line_color {
+  position: absolute;
+  top: 16px;
+  left: 2px;
+  width: 18rpx;
+  height: 70%;
+}
+
+.ms_list .imgBox .line_color .line_show {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ms_list .imgBox .guan_title, .ms_list .imgBox .guan_material {
+  position: absolute;
+  top: 12%;
+  left: 40%;
+  transform: translateX(-50%);
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.ms_list .imgBox .guan_material {
+  font-size: 28rpx;
+  top: 70%;
+}
+
+.ms_list .status {
+  text-align: center;
+  padding-right: 56rpx;
+}
+
+.ms_list .guan_weight {
+  position: absolute;
+  top: 136rpx;
+  left: 40%;
+  transform: translateX(-50%);
+}

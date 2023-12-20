@@ -1,0 +1,22 @@
+var bgColor = function(status){
+    switch(status){
+      case '0': return 'gray'
+      case '1': return 'green'
+      default: return 'red'
+    }
+    
+}
+var status = function(status){
+  switch(status){
+    case '1': return '在线'
+    case '2': return '上限报警'
+    case '3': return '下限报警'
+    case '4': return '数据异常'
+    case '0': return '离线'
+    default: return ''
+  }
+}
+module.exports = {
+  bgColor:bgColor,
+  status:status
+} 

@@ -1,0 +1,43 @@
+{
+  "lazyCodeLoading":"requiredComponents",
+  "pages": [
+    
+    "pages/indexDetail/index"
+  
+  ],
+  
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#1CB3D0",
+    "backgroundColor": "#000000"
+  },
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255"
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index", 
+    "van-icon": "@vant/weapp/icon/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-toast": "@vant/weapp/toast/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-nav-bar": "@vant/weapp/nav-bar/index",
+    "van-sticky": "@vant/weapp/sticky/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-datetime-picker": "@vant/weapp/datetime-picker/index",
+    "van-popup": "@vant/weapp/popup/index"
+    
+    
+  }
+}
