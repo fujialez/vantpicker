@@ -2,7 +2,7 @@
   "lazyCodeLoading":"requiredComponents",
   "pages": [
     
-    "pages/indexDetail/index"
+    "pages/index/index"
   
   ],
   
